@@ -1,34 +1,26 @@
 body {
     font-family: 'Montserrat', sans-serif;
-    width: 80%;
-    margin:auto;
+    margin: 0 10%;
+    width: 80%
 }
-
+figure {
+    margin: 5px 0;
+}
 #thumb-bar{
     display: flex;
 }
-
 div img {
     width: 20%;
 }
-
 h1 {
     text-align: center;
 }
-
 p {
     text-align: center;
 }
-
-figure {
-    width: 100%;
-    margin:auto
-}
-
 .displayed-img {
     width: 100%;
 }
-
 label {
     display:block;
     text-align: center;
@@ -42,9 +34,30 @@ button {
     margin:auto;
 }
 
-
 @media screen and (min-width: 640px) {
     body {
-    background-color: peachpuff;
+        background-color: peachpuff;
+        width: 640px;
+        margin: auto
     }
-}   
+    p {
+        text-align: left;
+        background-color: green;
+    }
+    .bottom {
+        text-align: center;
+    }
+    label{
+        display: inline-block;
+        margin: 0 15px;
+    }
+    input {
+        display: inline-block;
+        margin: 0 15px;
+    }
+    button {
+        display: inline-block;
+        margin: 0 15px;
+    }
+}  
+
