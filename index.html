@@ -3,16 +3,35 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" a href="styles/style.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet"> 
 </head>
 
 <body>
-    <h1>Welcome to our gallery</h1>
-    <p>Hover on any thumbnail to see it bigger</p>
-    <div id="thumb-bar"> </div>
-    <img class="displayed-img">
-    <label>What effect do you want to apply?</label>
-    <input id="effect" type="text">
-    <button>Submit</button>
+    <header>
+        <h1>Welcome to our gallery</h1>
+    </header>
+    <main>
+        <figcaption>
+        <p>Hover on any thumbnail to see it bigger</p>
+        </figcaption>
+        <figure>
+            <div id="thumb-bar">
+                <img src="images/pic1.jpg" alt="Eyes">
+                <img src="images/pic2.jpg" alt="Wavey pattern">
+                <img src="images/pic3.jpg" alt="Flowers">
+                <img src="images/pic4.jpg" alt="Anubis and ancient Egyptian stuff">
+                <img src="images/pic5.jpg" alt="Butterfly on a leaf">
+            </div>
+        </figure>
+        <figure>
+            <img class="displayed-img" src="images/pic5.jpg" alt="Butterfly on a leaf">
+        </figure>
+        <label>What effect do you want to apply?</label>
+        <input id="effect" type="text">
+        <button>Submit</button>
+    </main>
 </body>
 
 </html>

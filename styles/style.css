@@ -1,3 +1,50 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    width: 80%;
+    margin:auto;
+}
+
+#thumb-bar{
+    display: flex;
+}
+
 div img {
     width: 20%;
 }
+
+h1 {
+    text-align: center;
+}
+
+p {
+    text-align: center;
+}
+
+figure {
+    width: 100%;
+    margin:auto
+}
+
+.displayed-img {
+    width: 100%;
+}
+
+label {
+    display:block;
+    text-align: center;
+}
+input {
+    display:block;
+    margin:auto;
+}
+button {
+    display:block;
+    margin:auto;
+}
+
+
+@media screen and (min-width: 640px) {
+    body {
+    background-color: peachpuff;
+    }
+}   
