@@ -1,48 +1,38 @@
-let label = document.querySelector("label");
-let input = document.querySelector("input");
-let button = document.querySelector("button");
-let bigPic = document.querySelector(".displayed-img");
-let thumb = document.querySelector("#thumb-bar");
-
 function displayPic(pic) {
-    console.log(pic.target)
+    let bottom = document.querySelector(".bottom");
+    let bigPic = document.querySelector(".displayed-img");
     bigPic.src = pic.target.src
-    console.log(bigPic)
-    if (label.style.visibility == "hidden"){
-        label.style.visibility = "visible";
-        input.style.visibility = "visible";
-        button.style.visibility = "visible";
+    if (bottom.style.visibility == "hidden") {
+        bottom.style.visibility = "visible";
     }
 }
 
+
 function submit() {
-    console.log(input.value)
-    if (input.value == "blur"){
-        console.log(bigPic.src)
-        console.log(typeof bigPic.src)
-        bigPic.src = bigPic.src.slice(-7, -1) + "b" + ".jpg"
-        
-        console.log(bigPic.src)
+    let input = document.querySelector("#effect");
+    bigPic = document.querySelector(".displayed-img");
+    if (input.value == "blur") {
+        bigPic.src = bigPic.src.slice(-15, -4) + "b" + ".jpg";
     }
     else {
-        alert("Error: Unknown Command")
+        alert("Error: Unknown Effect");
     }
-    input.value = ""
+    input.value = "";
 }
 
 
 function main() {
-    label.style.visibility = "hidden"
-    input.style.visibility = "hidden"
-    button.style.visibility = "hidden"
+    let bottom = document.querySelector(".bottom");
+    let thumb = document.querySelector("#thumb-bar");
+    bottom.style.visibility = "hidden";
     let imgList = [];
     for (i = 0; i < 5; i++) {
         imgList[i] = document.createElement("img");
         imgList[i].src = `images/pic${i+1}.jpg`;
-        
-        thumb.appendChild(imgList[i])
+        thumb.appendChild(imgList[i]);
     }
     thumb.addEventListener("mouseover", function(e){displayPic(e);}, false);
 }
+
 
 main()
