@@ -1,7 +1,7 @@
 body {
     font-family: 'Montserrat', sans-serif;
     margin: 0 10%;
-    width: 80%
+    width: 80%;
 }
 figure {
     margin: 5px 0;
@@ -38,7 +38,7 @@ button {
     body {
         background-color: peachpuff;
         width: 640px;
-        margin: auto
+        margin: auto;
     }
     p {
         text-align: left;
